@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropsTypes from "prop-types";
 import "./Store.css";
+import "./styles.css";
 
 function Store({ title, price, image }) {
   return (
