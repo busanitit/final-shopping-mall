@@ -1,8 +1,13 @@
+import React from 'react';
+
+import Store from './components/Store/Store';
+
 function App() {
   return (
-    <div className="App">
-      <p>쇼핑몰 프로젝트</p>
-    </div>
+    <>
+    <p>쇼핑몰 프로젝트</p>
+    <Store />
+    </>
   );
 }
 
