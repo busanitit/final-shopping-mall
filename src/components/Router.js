@@ -16,6 +16,7 @@ import Store from 'Routes/Store'
 export default () => (
   <Router>
     <>
+    <p>Header 들어갈곳</p>
     {/* Switch: 두개의 컴포넌트가 랜더링되는것을 막아줌 */}
     <Switch>
       <Route path='/' exact component={Home} />
