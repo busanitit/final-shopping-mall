@@ -115,6 +115,7 @@ export default class extends React.Component {
           제안하는 Relax Style Store, 여기는 또오기 스토어 입니다.
         </Text>
         <Space />
+        <Space />
         <SemiTitle>FROM 1981</SemiTitle>
         <Space />
         <ImgContainer1>
@@ -136,6 +137,8 @@ export default class extends React.Component {
           <br />
           1981는 '또오기'라는 유산의 각인이자 고객에 대한 약속을 의미합니다.
         </Text>
+        <Space />
+        <Space />
         <Space />
         <SemiTitle>Master</SemiTitle>
         <Space />
