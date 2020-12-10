@@ -31,12 +31,12 @@ class Header extends Component {
                   <li class="nav-item">
                       <a class="page-scroll" href="/contact"  style={{ margin: 30 }}>Contact</a>
                   </li>
-                  {/* <li class="">
-                      <a class="page-scroll" href="#">전체보기</a>
+                   <li class="">
+                      <a class="page-scroll" href="/"style={{ margin: 30 }}>전체보기</a>
                   </li>
                   <li class="">
-                      <a class="page-scroll" href="#">로그인</a>
-                  </li> */}
+                      <a class="page-scroll" href="/"style={{ margin: 30 }}>로그인</a>
+                  </li> 
               </ul>
             </div>  
         </nav>
