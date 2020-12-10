@@ -3,8 +3,8 @@
 -세부기능 
 1) home
 2) about (김근태 1210 작업원료)
-3) teahouse
-4) incense shop
+3) teahouse (김근태 1210 작업원료)
+4) incense shop (김근태 1210 작업원료)
 5) 스토어 (상품목록)
 6) news 게시판 (공지)
 7) help 일반게시판

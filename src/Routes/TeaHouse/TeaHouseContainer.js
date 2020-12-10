@@ -20,6 +20,7 @@ const Title = styled.div`
   font-weight: 600;
   color: #145b3a;
   border-bottom: 1px solid #145b3a;
+  margin-top:80px;
 `;
 
 const SemiTitle = styled.h4`
