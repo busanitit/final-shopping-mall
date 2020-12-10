@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const images = {
   logo:
@@ -54,7 +54,6 @@ const Text = styled.pre`
   font-weight: 600;
   padding: 3px 0 4px;
   line-height: 20px;
-  font-family: MalgunGothic;
 `;
 
 const ImgContainer1 = styled.div`
