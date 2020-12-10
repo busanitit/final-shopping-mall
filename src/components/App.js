@@ -1,6 +1,7 @@
 import React from "react";
-import Router from 'components/Router'
-import {Container} from 'react-bootstrap'
+import Router from 'components/Router';
+import {Container} from 'react-bootstrap';
+
 function App() {
   return (
     <Container>
