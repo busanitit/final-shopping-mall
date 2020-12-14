@@ -41,6 +41,12 @@ const Item = styled.li`
     ${props => (props.current ? "#808080" : "transparent")};
 `;
 
+const Line = styled.div`
+  border-bottom: 1px solid #e6e6e6;
+  width: 100px;
+  height: 40px;
+`;
+
 export default ({name,price,img}) => (
       <>
         <div>Store</div>
@@ -57,6 +63,8 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
+          <br />
+          <Line />
           <div class="item" className='mr-3'>
             <a
               href="#"
@@ -68,6 +76,7 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
+          <Line />
           <div class="item" className='mr-3'>
             <a
               href="#"
@@ -79,6 +88,7 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
+          <Line />
           <div class="item" className='mr-3'>
             <a
               href="#"
@@ -90,8 +100,8 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
+          <Line />
         </Row>
-        <hr />
         <Row className='mb-2'>
         <div class="item" className='mr-3'>
             <a
