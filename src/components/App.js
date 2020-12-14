@@ -3,6 +3,7 @@ import Router from 'components/Router';
 import {Container} from 'react-bootstrap';
 import GlobalStyles from 'components/GlobalStyles'
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <Router/>
       <GlobalStyles/>
-      <p>Footer 들어갈곳</p>
+      <Footer />
     </Container>
   );
 }

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Header extends Component {
   render () {
       return (
-        <nav className="navbar navbar-expand-md bg-dark navbar-dark" >
-            <a className="navbar-brand" href="/" >또오기 스토리</a>
+        <nav className="navbar navbar-expand-md bg-dark navbar-dark" style={{flex:1, backgroundColor: 'gray'}} >
+            <a className="navbar-brand" href="/" >또오기 스토리 │ </a>
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
               <ul className="navbar-nav" >
                   <li className="nav-item">
