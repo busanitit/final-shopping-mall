@@ -12,6 +12,8 @@ import IncenseShop from "Routes/IncenseShop";
 import Contact from "Routes/Contact";
 import Home from 'Routes/Home'
 import Store from 'Routes/Store'
+import Login from 'Routes/Login'
+import SignUp from 'Routes/SignUp'
 
 export default () => (
   <Router>
@@ -24,6 +26,8 @@ export default () => (
       <Route path='/incenseshop' component={IncenseShop} />
       <Route path='/store' component={Store} />
       <Route path='/contact' component={Contact} />
+      <Route path='/login' component={Login} />
+      <Route path='/signup' component={SignUp} />
       {/* 입력한 주소가 라우터에 없는값일시 Home 으로 리턴 */}
       <Redirect from-='*' to='/' />
     </Switch>
