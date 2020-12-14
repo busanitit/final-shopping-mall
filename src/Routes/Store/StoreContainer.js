@@ -6,6 +6,13 @@ import { Link } from 'react-router-dom';
 import PropsTypes from 'prop-types';
 import { Row } from 'react-bootstrap';
 import styled from 'styled-components';
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Detail from 'Routes/StoreDetail';
+
 
 const images = {
   img1:
@@ -64,7 +71,6 @@ export default ({name,price,img}) => (
             </a>  
           </div>
           <br />
-          <Line />
           <div class="item" className='mr-3'>
             <a
               href="#"
@@ -76,7 +82,6 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
-          <Line />
           <div class="item" className='mr-3'>
             <a
               href="#"
@@ -88,7 +93,6 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
-          <Line />
           <div class="item" className='mr-3'>
             <a
               href="#"
@@ -100,8 +104,8 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
-          <Line />
         </Row>
+        <hr />
         <Row className='mb-2'>
         <div class="item" className='mr-3'>
             <a

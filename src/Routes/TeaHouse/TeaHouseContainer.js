@@ -78,6 +78,10 @@ const CustomButton = styled.button`
   border: none;
 `;
 
+const Img = styled.img`
+  width:100%;
+`;
+
 export default class extends React.Component {
   render() {
     return (
@@ -87,7 +91,7 @@ export default class extends React.Component {
         <SemiTitle>Tea Store</SemiTitle>
         <Space />
         <Space />
-        <img src={images.img1} alt='티 스토어' />
+        <Img src={images.img1} alt='티 스토어' />
         <Space />
         <Text>
           고전적인 다도 문화를 현대적이고 캐주얼하게 재해석하여, 생활속에서
@@ -105,7 +109,7 @@ export default class extends React.Component {
         <Space />
         <SemiTitle>Tea Guide Program</SemiTitle>
         <Space />
-        <img src={images.img2} alt='티 가이드 프로그램' />
+        <Img src={images.img2} alt='티 가이드 프로그램' />
         <Space />
         <Text>
           찻잎을 이해하고 차를 알아가면서 즐긴다면, 일상속 찻자리는 더욱
@@ -125,7 +129,7 @@ export default class extends React.Component {
         <Space />
         <SemiTitle>Tasting Table Program</SemiTitle>
         <Space />
-        <img src={images.img3} alt='시음회' />
+        <Img src={images.img3} alt='시음회' />
         <Space />
         <Text>
           차와 친해지고 싶은데, 어떻게 시작해야할지 모르신다면, 또오기 시음회와
