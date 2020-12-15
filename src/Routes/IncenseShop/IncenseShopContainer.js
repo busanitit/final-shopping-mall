@@ -7,7 +7,7 @@ const images = {
   img1:
     "https://modo-phinf.pstatic.net/20200227_9/15827792012465ymS7_JPEG/mosaKPVJ0w.jpeg?type=a1100",
   img2:
-    "https://modo-phinf.pstatic.net/20200227_240/1582791927364gLjU7_JPEG/mosauMMgzj.jpeg?type=w1100"
+    "https://modo-phinf.pstatic.net/20200227_240/1582791927364gLjU7_JPEG/mosauMMgzj.jpeg?type=w1100",
 };
 
 const Title = styled.div`
@@ -17,7 +17,7 @@ const Title = styled.div`
   font-weight: 600;
   color: #145b3a;
   border-bottom: 1px solid #145b3a;
-  margin-top:80px;
+  margin-top: 80px;
 `;
 
 const SemiTitle = styled.h4`
@@ -57,7 +57,11 @@ const CustomButton = styled.button`
   border: none;
 `;
 const VideoContainer = styled.div`
+  position: relative;
+  padding-bottom: 56.25%;
   margin-bottom: 16px;
+  width: 100%;
+  overflow: hidden;
 `;
 const VideoInfo = styled.div`
   display: flex;
@@ -79,6 +83,18 @@ const VideoInfoLink = styled.a`
   }
 `;
 
+const Img = styled.img`
+  width: 100%;
+`;
+
+const Iframe = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
+
 export default class extends React.Component {
   render() {
     return (
@@ -88,7 +104,7 @@ export default class extends React.Component {
         <SemiTitle>300여종 이상의 인센스 콜렉션</SemiTitle>
         <Space />
         <Space />
-        <img src={images.img1} alt='차' />
+        <Img src={images.img1} alt='차' />
         <Space />
         <Text>
           아로마 인센스는 심신의 안정과 이국적인 분위기를 선사해주는 고대부터
@@ -105,7 +121,7 @@ export default class extends React.Component {
         <Space />
         <SemiTitle>오프라인 시향</SemiTitle>
         <Space />
-        <img src={images.img2} alt='시향' width={1100} />
+        <Img src={images.img2} alt='시향' width={1100} />
         <Space />
         <Text>
           또오기 스토어 오프라인 샵에 방문하시면, 모든 종류의 향을 시향해보고
@@ -117,12 +133,12 @@ export default class extends React.Component {
         <SemiTitle>온라인 스토어 시향</SemiTitle>
         <Space />
         <VideoContainer>
-          <iframe
+          <Iframe
             title='시향'
             width='100%'
             height='618'
             src='https://www.youtube.com/embed/RaSMZbcHcoA'
-            frameborder='0'
+            frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
           />
@@ -157,15 +173,15 @@ export default class extends React.Component {
         <SemiTitle>인센스 입문 가이드</SemiTitle>
         <Space />
         <VideoContainer>
-          <iframe
+          <Iframe
             title='가이드 전편'
             width='100%'
             height='618'
             src='https://www.youtube.com/embed/iNIEI2zcpFo'
-            frameborder='0'
+            frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
-          ></iframe>
+          />
         </VideoContainer>
         <VideoInfo>
           <VideoInfoDesc>
@@ -181,15 +197,15 @@ export default class extends React.Component {
         <Space />
         <Space />
         <VideoContainer>
-          <iframe
+          <Iframe
             title='가이드 후편'
             width='100%'
             height='618'
             src='https://www.youtube.com/embed/3x1OedQk784'
-            frameborder='0'
+            frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
-          ></iframe>
+          />
         </VideoContainer>
         <VideoInfo>
           <VideoInfoDesc>

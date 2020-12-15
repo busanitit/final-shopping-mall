@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const images = {
   logo:
@@ -28,7 +28,7 @@ const Title = styled.div`
   font-weight: 600;
   color: #145b3a;
   border-bottom: 1px solid #145b3a;
-  margin-top:80px;
+  margin-top: 80px;
 `;
 
 const SemiTitle = styled.h4`
@@ -49,7 +49,7 @@ const Space = styled.div`
   height: 40px;
 `;
 
-const Text = styled.pre`
+const Text = styled.p`
   display: inline-block;
   color: #666;
   font-weight: 600;
@@ -59,13 +59,13 @@ const Text = styled.pre`
 
 const ImgContainer1 = styled.div`
   display: grid;
-  grid-template-columns: 540px 540px;
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
 `;
 
 const ImgContainer2 = styled.div`
   display: grid;
-  grid-template-columns: 353px 353px 353px;
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 `;
 
@@ -84,18 +84,23 @@ const OwnerAnmt = styled.p`
   margin-bottom: 10px;
   line-height: 20px;
 `;
+
+const Img = styled.img`
+  width: 100%;
+`;
+
 export default class extends React.Component {
   render() {
     return (
       <>
         <Title>About</Title>
-        <img src={images.logo} alt='로고_1' style={{ display: "block" }} />
+        <Img src={images.logo} alt='로고_1' />
         <Line />
         <Space />
-        <img src={images.img1} alt='로고_2' />
+        <Img src={images.img1} alt='로고_2' />
         <Space />
         <Space />
-        <img src={images.img2} alt='로고_3' />
+        <Img src={images.img2} alt='로고_3' />
         <Space />
         <Text>
           삶 의 무게와 압박, 회의감을 견뎌내는 동력은 거창한 결단, 일탈,
@@ -119,8 +124,8 @@ export default class extends React.Component {
         <SemiTitle>FROM 1981</SemiTitle>
         <Space />
         <ImgContainer1>
-          <img src={images.img3_1} alt='또오기 문방구_1' />
-          <img src={images.img3_2} alt='또오기 문방구_2' />
+          <Img src={images.img3_1} alt='또오기 문방구_1' />
+          <Img src={images.img3_2} alt='또오기 문방구_2' />
         </ImgContainer1>
         <Space />
         <Text>
@@ -143,9 +148,9 @@ export default class extends React.Component {
         <SemiTitle>Master</SemiTitle>
         <Space />
         <ImgContainer2>
-          <img src={images.img4_1} alt='옛날사진_1' />
-          <img src={images.img4_2} alt='옛날사진_2' />
-          <img src={images.img4_3} alt='옛날사진_3' />
+          <Img src={images.img4_1} alt='옛날사진_1' />
+          <Img src={images.img4_2} alt='옛날사진_2' />
+          <Img src={images.img4_3} alt='옛날사진_3' />
         </ImgContainer2>
         <Space />
         <Space />

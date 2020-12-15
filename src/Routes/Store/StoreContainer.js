@@ -6,6 +6,13 @@ import { Link } from 'react-router-dom';
 import PropsTypes from 'prop-types';
 import { Row } from 'react-bootstrap';
 import styled from 'styled-components';
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Detail from 'Routes/StoreDetail';
+
 
 const images = {
   img1:
@@ -41,6 +48,12 @@ const Item = styled.li`
     ${props => (props.current ? "#808080" : "transparent")};
 `;
 
+const Line = styled.div`
+  border-bottom: 1px solid #e6e6e6;
+  width: 100px;
+  height: 40px;
+`;
+
 export default ({name,price,img}) => (
       <>
         <div>Store</div>
@@ -57,6 +70,7 @@ export default ({name,price,img}) => (
               </div>    
             </a>  
           </div>
+          <br />
           <div class="item" className='mr-3'>
             <a
               href="#"
