@@ -13,6 +13,7 @@ import Contact from "Routes/Contact";
 import Home from 'Routes/Home'
 import Store from 'Routes/Store'
 
+
 export default () => (
   <Router>
     <>
@@ -22,7 +23,6 @@ export default () => (
       <Route path='/about' component={About} />
       <Route path='/teahouse' component={TeaHouse} />
       <Route path='/incenseshop' component={IncenseShop} />
-      <Route path='/store' component={Store} />
       <Route path='/contact' component={Contact} />
       {/* 입력한 주소가 라우터에 없는값일시 Home 으로 리턴 */}
       <Redirect from-='*' to='/' />

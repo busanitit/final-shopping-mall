@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BsJustify } from 'react-icons/bs';
+
 
 class Header extends Component {
   render () {
@@ -32,7 +34,7 @@ class Header extends Component {
                       <a className="page-scroll" href="/#/contact"  style={{ margin: 30 }}>Contact</a>
                   </li>
                    <li className="">
-                      <a className="page-scroll" href="/"style={{ margin: 30 }}>전체보기</a>
+                      <a className="page-scroll" href="/"style={{ margin: 30 }}><BsJustify /> 전체보기</a>
                   </li>
                   <li className="">
                       <a className="page-scroll" href="/"style={{ margin: 30 }}>로그인</a>
