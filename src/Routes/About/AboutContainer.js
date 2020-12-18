@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import styled from "styled-components";
+import {userApi} from '../../api'
 
 const images = {
   logo:
@@ -93,6 +94,7 @@ export default class extends React.Component {
   render() {
     return (
       <>
+        {/* {userApi.userList()} */}
         <Title>About</Title>
         <Img src={images.logo} alt='로고_1' />
         <Line />

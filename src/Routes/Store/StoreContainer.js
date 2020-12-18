@@ -54,20 +54,6 @@ const Line = styled.div`
   height: 40px;
 `;
 
-const Pname = styled.h6`
-  color: #4d4d4d;
-  font-size: 18px;
-`;
-
-const Pprice = styled.h6`
-  color: #000000;
-  font-size: 25px;
-`;
-const Space1 = styled.div`
-  width: 99%;
-  height: 40px;
-`;
-
 export default ({name,price,img}) => (
       <>
         <div>Store</div>
@@ -79,9 +65,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img1} alt={name} />
-                  <Pname>[HEM] 더 문</Pname>
-                  <Space1 />
-                  <Pprice>\2,500</Pprice>
+                  <span>{name}</span>
+                  <span>{price}</span>
               </div>    
             </a>  
           </div>
