@@ -36,7 +36,8 @@ const CustomButton = styled.button`
 const Button1 = styled.button`
   margin-top: 20px;
   font-size: 16px;
-  margin-left: 430px;
+  /* margin-left: 430px; */
+  float:right;
   font-weight: 60;
   background-color: #33cc33;
   color: #ffffff;
@@ -45,13 +46,12 @@ const Button1 = styled.button`
   border: none;
 `;
 const Button2 = styled.button`
-  margin-top: 20px;
   font-size: 16px;
-  margin-left: 630px;
+  float:right;
   font-weight: 60;
   background-color: #595959;
   color: #ffffff;
-  width: 11%;
+  width: 15%;
   height: 40px;
   border: none;
 `;
@@ -59,11 +59,26 @@ const InfoButton = styled.button`
   margin-top: 20px;
   font-size: 16px;
   font-weight: 600;
-  background-color: #a6a6a6;
+  border:1px solid whitesmoke;
+  background-color: #cccccc;
   color: #333333;
-  width: 100%;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  cursor:pointer;
+  float:left;
+  width:25%;
   height: 50px;
   border: none;
+`;
+const AmountButton = styled.button`
+  border-radius:5px;
+  text-align:center;
+  border: none;
+  cursor:pointer;
+  width:5;
+  height:25px;
+  float:right;
 `;
 const Container = styled.div`
   display: grid;
@@ -139,6 +154,12 @@ const Line = styled.div`
   height: 40px;
   margin-left:420px;
 `;
+const Line1 = styled.div`
+  border-bottom: 2px solid #e6e6e6;
+  width: 40%;
+  height: 40px;
+  margin-left:420px;
+`;
 const List = styled.li`
   font-weight: 600;
   margin-bottom: 7px;
@@ -153,6 +174,7 @@ const List = styled.li`
     width: 1em;
   }
 `;
+
 export default class extends React.Component {
   render() {
     return (
@@ -170,10 +192,26 @@ export default class extends React.Component {
             <XTitle>2,500원</XTitle>
             <Space />
             <Space />
-            <Button1>구매하기</Button1>
-            <Button2>톡톡문의</Button2>
-            <Button2>장바구니</Button2>
-            <Button2>찜하기</Button2>
+            <Line1 />
+            <div className="amount" >
+              <AmountButton>+</AmountButton>
+
+              <AmountButton>-</AmountButton>
+            </div>  
+            <Line1 />
+            <div>
+              <span>
+                <Button1>톡톡문의</Button1>
+                <Button1>구매하기</Button1>
+              </span>
+              <Space />
+              <span>
+                <Button2>장바구니</Button2>
+                <Button2>찜하기</Button2>
+              </span>
+            </div>
+            <div>
+            </div>
           </div>
         </Container>
         <hr />
@@ -181,48 +219,52 @@ export default class extends React.Component {
         <Space1 />
         <Row className="mb-5" data-role="productList">
           <div class="item" className='mr-1'>
-              <div class="thumb_area">
-                  <Img2 src={images.img1} alt='베스트상품1' />
-                  <BestItem>[HEM]더문</BestItem>
-                  <ItemPrice>2,500원</ItemPrice>
-              </div>    
+            <div class="thumb_area">
+              <Img2 src={images.img1} alt='베스트상품1' />
+              <BestItem>[HEM]더문</BestItem>
+              <ItemPrice>2,500원</ItemPrice>
+            </div>
           </div>
           <br />
           <div class="item" className='mr-1'>
-              <div class="thumb_area">
-                  <Img2 src={images.img2} alt='베스트상품2' />
-                  <BestItem>[HEM]더문</BestItem>
-                  <ItemPrice>2,500원</ItemPrice>
-              </div>    
+            <div class="thumb_area">
+              <Img2 src={images.img2} alt='베스트상품2' />
+              <BestItem>[HEM]더문</BestItem>
+              <ItemPrice>2,500원</ItemPrice>
+            </div>
           </div>
           <div class="item" className='mr-1'>
-              <div class="thumb_area">
-                  <Img2 src={images.img3} alt='베스트상품3' />
-                  <BestItem>[HEM]더문</BestItem>
-                  <ItemPrice>2,500원</ItemPrice>
-              </div>    
+            <div class="thumb_area">
+              <Img2 src={images.img3} alt='베스트상품3' />
+              <BestItem>[HEM]더문</BestItem>
+              <ItemPrice>2,500원</ItemPrice>
+            </div>
           </div>
           <div class="item" className='mr-1'>
-              <div class="thumb_area">
-                  <Img2 src={images.img4} alt='베스트상품4' />
-                  <BestItem>[HEM]더문</BestItem>
-                  <ItemPrice>2,500원</ItemPrice>
-              </div>    
+            <div class="thumb_area">
+              <Img2 src={images.img4} alt='베스트상품4' />
+              <BestItem>[HEM]더문</BestItem>
+              <ItemPrice>2,500원</ItemPrice>
+            </div>
           </div>
           <div class="item" className='mr-1'>
-              <div class="thumb_area">
-                  <Img2 src={images.img5} alt='베스트상품5' />
-                  <BestItem>[HEM]더문</BestItem>
-                  <ItemPrice>2,500원</ItemPrice>
-              </div>    
+            <div class="thumb_area">
+              <Img2 src={images.img5} alt='베스트상품5' />
+              <BestItem>[HEM]더문</BestItem>
+              <ItemPrice>2,500원</ItemPrice>
+            </div>
           </div>
         </Row>
         <InfoButton>상세정보</InfoButton>
+        <InfoButton>리뷰</InfoButton>
+        <InfoButton>Q&A</InfoButton>
+        <InfoButton>반품/교환정보</InfoButton>
+        <Space />
         <Space1 />
         <ZTitle>Text - Double click to edit</ZTitle>
         <Space1 />
         <Text>Text - Double click to edit</Text>
-        <Img3 src={images.img1} alt="상세화면"/>
+        <Img3 src={images.img1} alt="상세화면" />
         <Text>작고 간에 이상이 있음으로써 용감하고 굳세게 살 수있는 것이다~~</Text>
         <Space1 />
         <Line />
@@ -236,7 +278,7 @@ export default class extends React.Component {
         <List>리스트 항목</List>
         <List>리스트 항목</List>
         <Line />
-        <Img3 src={images.img1} alt="상세화면"/>
+        <Img3 src={images.img1} alt="상세화면" />
       </>
     );
   }

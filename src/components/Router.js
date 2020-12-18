@@ -11,12 +11,12 @@ import TeaHouse from "Routes/TeaHouse";
 import IncenseShop from "Routes/IncenseShop";
 import Contact from "Routes/Contact";
 import Users from 'Routes/Users'
-
 import Home from 'Routes/Home'
 import Store from 'Routes/Store'
 import Login from 'Routes/Login'
 import SignUp from 'Routes/SignUp'
 import Detail from 'Routes/StoreDetail';
+import Edit from "Routes/Users/EditUser"
 
 export default () => (
   <Router>
@@ -36,6 +36,8 @@ export default () => (
         <Route path='/login' component={Login} />
         <Route path='/signup' component={SignUp} />
         <Route path='/users' component={Users} />
+        <Route path='/detail' component={Detail} />
+        <Route path='/edit' component={Edit} />
         {/* 입력한 주소가 라우터에 없는값일시 Home 으로 리턴 */}
         <Redirect from-='*' to='/' />
       </Switch>

@@ -50,14 +50,28 @@ const Item = styled.li`
 
 const Line = styled.div`
   border-bottom: 1px solid #e6e6e6;
-  width: 100px;
+  width: 99%;
+  height: 40px;
+`;
+
+const Pname = styled.h6`
+  color: #4d4d4d;
+  font-size: 18px;
+`;
+
+const Pprice = styled.h6`
+  color: #000000;
+  font-size: 25px;
+`;
+const Space1 = styled.div`
+  width: 99%;
   height: 40px;
 `;
 
 export default ({name,price,img}) => (
       <>
         <div>Store</div>
-        <hr />
+        <Line />
         <Row className="mb-2" data-role="productList">
           <div class="item" className='mr-3'>
             <a
@@ -65,8 +79,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img1} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -77,8 +91,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img2} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -88,8 +102,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img3} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -99,13 +113,13 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img4} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
         </Row>
-        <hr />
+        <Line />
         <Row className='mb-2'>
         <div class="item" className='mr-3'>
             <a
@@ -113,8 +127,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img5} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -124,8 +138,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img6} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -135,8 +149,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img7} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -146,13 +160,13 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img8} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
         </Row>
-        <hr />
+        <Line />
         <Row className='mb-5'>
         <div class="item" className='mr-3'>
             <a
@@ -160,8 +174,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img9} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -171,8 +185,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img10} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -182,8 +196,8 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img11} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
@@ -193,38 +207,11 @@ export default ({name,price,img}) => (
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img12} alt={name} />
-                  <span>{name}</span>
-                  <span>{price}</span>
+                  <Pname>[HEM] 더 문</Pname>
+                  <Pprice>\2,500</Pprice>
               </div>    
             </a>  
           </div>
         </Row>
-        <nav aria-label='...'>
-          <ul class='pagination pagination-lg'>
-            <Item class='page-item active' aria-current='page'>
-              <span class='page-link'>1</span>
-            </Item>
-            <Item class='page-item'>
-              <a class='page-link' href='#'>
-                2
-              </a>
-            </Item>
-            <Item class='page-item'>
-              <a class='page-link' href='#'>
-                3
-              </a>
-            </Item>
-            <Item class='page-item'>
-              <a class='page-link' href='#'>
-                4
-              </a>
-            </Item>
-            <Item class='page-item'>
-              <a class='page-link' href='#'>
-                5
-              </a>
-            </Item>
-          </ul>
-        </nav>
       </>
     );
