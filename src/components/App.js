@@ -2,16 +2,16 @@ import React from "react";
 import Router from 'components/Router';
 import {Container} from 'react-bootstrap';
 import GlobalStyles from 'components/GlobalStyles'
-import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import StoreDetail from '../Routes/StoreDetail';
 
 function App() {
   return (
     <Container>
-      <Header />
       <Router/>
       <GlobalStyles/>
-      <Footer />
+      <StoreDetail />
+      <Footer/>
     </Container>
   );
 }

@@ -5,7 +5,6 @@ export default class extends React.Component {
   render() {
     return (
       <Container>
-        <div>Home</div>
       </Container>
     );
   }

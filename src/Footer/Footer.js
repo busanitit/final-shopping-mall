@@ -9,8 +9,8 @@ const footer = () => {
          <div className="container" >
             <div className="row">
             </div>
-            <div className="row" style={{padding: 50, marginBottom: 0, marginTop: 20}}>
-               <p><span><button type="button"  style={{padding: 10, marginBottom: 40, backgroundColor: 'black', color: 'lightgray', fontWeight: 'bold', fontSize: '20px'}}>또오기 스토어@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼</button>&nbsp;&nbsp;
+            <div className="row" >
+               <p><span><button type="button" data-toggle="dropdown"  style={{padding: 10, marginBottom: 40, backgroundColor: 'black', color: 'lightgray', fontWeight: 'bold', fontSize: '20px'}}>또오기 스토어@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼</button>&nbsp;&nbsp;
                   <a><BsQuestionCircle style={{fontSize: '25px'}}/></a></span><br/>
                
                <ul>
@@ -27,7 +27,7 @@ const footer = () => {
                <hr/>
                
                <p style={{marginTop: 5}}><span style={{color: 'darkyellow'}}>￦ </span><span style={{color: 'GrayText'}}>계좌정보</span>
-               <hr style={{color: 'lightgray' }}/>
+               <hr/>
                <span style={{color: 'GrayText'}}>예금주</span> &nbsp; &nbsp; &nbsp; &nbsp;<span>홍 길 동</span> &nbsp;
                <hr/>
                <span style={{color: 'GrayText'}}>입금은행</span> &nbsp; &nbsp; <span> 부산은행 </span>&nbsp;
