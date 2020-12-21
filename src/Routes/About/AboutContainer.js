@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import styled from "styled-components";
-import {userApi} from '../../api'
+import { Container } from "react-bootstrap";
 
 const images = {
   logo:
@@ -93,7 +93,7 @@ const Img = styled.img`
 export default class extends React.Component {
   render() {
     return (
-      <>
+      <Container>
         {/* {userApi.userList()} */}
         <Title>About</Title>
         <Img src={images.logo} alt='로고_1' />
@@ -178,7 +178,7 @@ export default class extends React.Component {
           I'm always hungry.
         </OwnerAnmt>
         <Space />
-      </>
+      </Container>
     );
   }
 }

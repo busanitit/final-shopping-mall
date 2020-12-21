@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 class SimpleSlider extends Component {
   render() {
     const settings = {
-      dots: true,
       infinite: true,
       speed: 500,
       autoplay: true,
@@ -15,42 +14,28 @@ class SimpleSlider extends Component {
       slidesToScroll: 1,
     };
 
-    const ScrollContainer = styled.div`
-      height: 400;
-      overflow: hidden;
-    `;
+    const ScrollContainer = styled.div``;
+    
     const Img = styled.img`
       width: 100%;
       height: auto;
-      object-fit:cover;
+      object-fit: cover;
     `;
 
     return (
       <ScrollContainer>
         <Slider {...settings}>
           <div>
-            <Img
-              src='https://modo-phinf.pstatic.net/20200227_7/1582794256365I0zjj_PNG/mosaBCNRTa.png'
-              alt='slide1'
-            />
+            <Img src='/SlideImg/1.png' alt='slide1' />
           </div>
           <div>
-            <Img
-              src='https://modo-phinf.pstatic.net/20200227_145/1582794257114vByP0_JPEG/mosa4A7JRL.jpeg'
-              alt='slide2'
-            />
+            <Img src='/SlideImg/2.jpeg' alt='slide2' />
           </div>
           <div>
-            <Img
-              src='https://modo-phinf.pstatic.net/20200227_155/1582794258264fVqWP_JPEG/mosapztbjp.jpeg'
-              alt='slide3'
-            />
+            <Img src='/SlideImg/3.jpeg' alt='slide3' />
           </div>
           <div>
-            <Img
-              src='https://modo-phinf.pstatic.net/20200227_189/1582794259151BSkyv_JPEG/mosacFCOb5.jpeg'
-              alt='slide4'
-            />
+            <Img src='/SlideImg/4.jpeg' alt='slide4' />
           </div>
         </Slider>
       </ScrollContainer>

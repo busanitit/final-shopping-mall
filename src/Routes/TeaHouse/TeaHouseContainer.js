@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { IoTicketOutline } from "react-icons/io5";
 import { VscCalendar } from "react-icons/vsc";
+import { Container } from "react-bootstrap";
 
 const images = {
   img1:
@@ -85,7 +86,7 @@ const Img = styled.img`
 export default class extends React.Component {
   render() {
     return (
-      <>
+      <Container>
         <Title>Tea House</Title>
         <Space />
         <SemiTitle>Tea Store</SemiTitle>
@@ -154,7 +155,7 @@ export default class extends React.Component {
         </CustomButton>
         <Space />
         <Space />
-      </>
+      </Container>
     );
   }
 }

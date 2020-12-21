@@ -17,11 +17,12 @@ import SignUp from "Routes/SignUp";
 import Users from "Routes/Users";
 import Detail from "Routes/StoreDetail";
 import Edit from "Routes/Users/EditUser"
-
+import Header from "../Header/Header";
 export default () => (
   <Router>
     <>
       {/* Switch: 두개의 컴포넌트가 랜더링되는것을 막아줌 */}
+      <Header/>
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />

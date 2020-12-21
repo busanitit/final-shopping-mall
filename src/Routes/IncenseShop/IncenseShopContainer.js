@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FiMonitor } from "react-icons/fi";
-
+import { Container } from "react-bootstrap";
 const images = {
   img1:
     "https://modo-phinf.pstatic.net/20200227_9/15827792012465ymS7_JPEG/mosaKPVJ0w.jpeg?type=a1100",
@@ -98,7 +98,7 @@ const Iframe = styled.iframe`
 export default class extends React.Component {
   render() {
     return (
-      <>
+      <Container>
         <Title>Incense Shop</Title>
         <Space />
         <SemiTitle>300여종 이상의 인센스 콜렉션</SemiTitle>
@@ -219,7 +219,7 @@ export default class extends React.Component {
           </VideoInfoLink>
         </VideoInfo>
         <Space />
-      </>
+      </Container>
     );
   }
 }
