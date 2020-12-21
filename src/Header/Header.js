@@ -24,12 +24,12 @@ class Header extends Component {
                   <li className="nav-item">
                       <a className="page-scroll" href="/#/store"  style={{ margin: 30 }}>스토어</a>
                   </li>
-                  {/* <li className="">
-                      <a className="page-scroll" href="#">News</a>
-                  </li>
+                  <li className="nav-item">
+                      <a className="page-scroll" href="/#/general" style={{ margin: 30 }}>자유게시판</a>
+                  </li> 
                   <li className="">
-                      <a className="page-scroll" href="#">Help</a>
-                  </li> */}
+                      <a className="page-scroll" href="/#/bulletin" style={{ margin: 30} }>공지</a>
+                  </li>
                   <li className="nav-item">
                       <a className="page-scroll" href="/#/contact"  style={{ margin: 30 }}>Contact</a>
                   </li>

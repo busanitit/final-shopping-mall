@@ -18,6 +18,11 @@ import Users from "Routes/Users";
 import Detail from "Routes/StoreDetail";
 import Edit from "Routes/Users/EditUser"
 import Header from "../Header/Header";
+import General from "Routes/General";
+import View from "Routes/View";
+import Bulletin from "Routes/Bulletin";
+import BulletinWrite from "Routes/Bulletin/BulletinWrite";
+import GeneralWrite from "Routes/General/GeneralWrite";
 export default () => (
   <Router>
     <>
@@ -32,6 +37,11 @@ export default () => (
         <Route path='/contact' component={Contact} />
         <Route path='/login' component={Login} />
         <Route path='/signup' component={SignUp} />
+        <Route path='/general' component={General} />
+        <Route path='/gwrite' component={GeneralWrite}/>
+        <Route path='/content/:id' component={View}/>
+        <Route path='/bulletin' component={Bulletin}/>
+        <Route path='/bwrite' component={BulletinWrite}/>
         <Route path='/users' component={Users} />
         <Route path='/detail' component={Detail} />
         <Route path='/edit' component={Edit} />
