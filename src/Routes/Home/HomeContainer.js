@@ -9,7 +9,7 @@ export default class extends React.Component {
   render() {
     return (
       <Container>
-        <SimpleSlider />
+        {/* <SimpleSlider /> */}
         <SummaryForHome />
         <Contact />
         <LinkImageForHome />
