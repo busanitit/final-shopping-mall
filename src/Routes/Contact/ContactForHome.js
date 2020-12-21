@@ -9,8 +9,6 @@ import {
   AiOutlineWifi,
 } from "react-icons/ai";
 import { ImPhone } from "react-icons/im";
-import { BsFillPersonFill } from "react-icons/bs";
-import { Container } from "react-bootstrap";
 
 const links = {
   link1:
@@ -26,6 +24,7 @@ const Title = styled.div`
   color: #145b3a;
   border-bottom: 1px solid #145b3a;
   margin-top: 80px;
+  margin-bottom:10px;
 `;
 
 const Line = styled.div`
@@ -117,11 +116,11 @@ const IconCard = styled.div`
   }
 `;
 
-const ContactPresenter = (props) => {
+const ContactForHome = (props) => {
   const NAVER_API_KEY = "3hdfa5cfdv";
 
   return (
-    <Container>
+    <>
       <Title>Contact</Title>
       <RenderAfterNavermapsLoaded
         ncpClientId={NAVER_API_KEY} // 자신의 네이버 계정에서 발급받은 Client ID
@@ -247,56 +246,8 @@ const ContactPresenter = (props) => {
       </InfoContainer>
       <Line />
       <Space />
-      <InfoContainer>
-        <InfoTitle>
-          <BsFillPersonFill fontSize={15} color={"#aaa"} />
-          &nbsp;<span>사업자정보</span>
-        </InfoTitle>
-        <div>
-          <Text1>
-            <Pinfo>상호명</Pinfo>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            또오기 스토어
-            <br />
-            <Pinfo>대표자</Pinfo>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            홍길동
-            <br />
-            <Pinfo>사업자번호</Pinfo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            111-11-22222
-            <br />
-            <Pinfo>통신판매번호</Pinfo>&nbsp;&nbsp;&nbsp; 제
-            2020-부산해운대-9999 호
-            <br />
-            <Pinfo>이메일</Pinfo>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            wonside@tto-ogi.com
-            <br />
-          </Text1>
-        </div>
-      </InfoContainer>
-      <Line />
-      <Space />
-      <InfoContainer>
-        <InfoTitle>
-          <BsFillPersonFill fontSize={15} color={"#aaa"} />
-          &nbsp;<span>입금계좌</span>
-        </InfoTitle>
-        <div>
-          <Text1>
-            <Pinfo>예금주</Pinfo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 홍길동
-            <br />
-            <Pinfo>입금은행</Pinfo>&nbsp;&nbsp;&nbsp; 겨울은행
-            <br />
-            <Pinfo>계좌번호</Pinfo>&nbsp;&nbsp;&nbsp; 110-222-333333
-            <br />
-          </Text1>
-        </div>
-      </InfoContainer>
-      <Space />
-      <Space />
-    </Container>
+    </>
   );
 };
 
-export default ContactPresenter;
+export default ContactForHome;

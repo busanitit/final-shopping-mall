@@ -61,7 +61,7 @@ export default ({name,price,img}) => (
         <Row className="mb-2" data-role="productList">
           <div class="item" className='mr-3'>
             <a
-              href="#"
+              href="#/detail/"
               class="item_link">
               <div class="thumb_area">
                   <img src={images.img1} alt={name} />
@@ -201,29 +201,29 @@ export default ({name,price,img}) => (
         </Row>
         <nav aria-label='...'>
           <ul class='pagination pagination-lg'>
-            <li class='page-item active' aria-current='page'>
+            <Item class='page-item active' aria-current='page'>
               <span class='page-link'>1</span>
-            </li>
-            <li class='page-item'>
+            </Item>
+            <Item class='page-item'>
               <a class='page-link' href='#'>
                 2
               </a>
-            </li>
-            <li class='page-item'>
+            </Item>
+            <Item class='page-item'>
               <a class='page-link' href='#'>
                 3
               </a>
-            </li>
-            <li class='page-item'>
+            </Item>
+            <Item class='page-item'>
               <a class='page-link' href='#'>
                 4
               </a>
-            </li>
-            <li class='page-item'>
+            </Item>
+            <Item class='page-item'>
               <a class='page-link' href='#'>
                 5
               </a>
-            </li>
+            </Item>
           </ul>
         </nav>
       </>
