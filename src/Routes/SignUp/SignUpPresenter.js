@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
-const Container = styled.div`
+const FormContainer = styled.div`
   display: flex;
   padding: 25px 20px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 `;
 
 const Title = styled.div`
@@ -61,7 +63,7 @@ const Button = styled.button`
 
 const Notice = styled.div`
   text-align: center;
-  margin-top:-20px;
+  margin-top: -20px;
 `;
 
 const SLink = styled(Link)`
@@ -77,10 +79,10 @@ const SignUpPresenter = ({
   handleSubmit,
   updateInfo,
 }) => (
-  <>
+  <Container>
     <Title>Sign Up</Title>
     <SemiTitle>회원가입</SemiTitle>
-    <Container>
+    <FormContainer>
       <Form onSubmit={handleSubmit}>
         <InputBox>
           <Input
@@ -94,7 +96,7 @@ const SignUpPresenter = ({
           <Input
             placeholder='Password'
             onChange={updateInfo}
-            type="password"
+            type='password'
             value={password}
             name='password'
           />
@@ -130,8 +132,8 @@ const SignUpPresenter = ({
           <SLink to='/login'>이미 회원이시라면?</SLink>
         </Notice>
       </Form>
-    </Container>
-  </>
+    </FormContainer>
+  </Container>
 );
 
 export default SignUpPresenter;

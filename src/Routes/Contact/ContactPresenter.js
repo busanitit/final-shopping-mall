@@ -10,6 +10,7 @@ import {
 } from "react-icons/ai";
 import { ImPhone } from "react-icons/im";
 import { BsFillPersonFill } from "react-icons/bs";
+import { Container } from "react-bootstrap";
 
 const links = {
   link1:
@@ -80,7 +81,6 @@ const InfoContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-column-gap: 20px;
-  grid
 `;
 
 const InfoTitle = styled.div`
@@ -121,7 +121,7 @@ const ContactPresenter = (props) => {
   const NAVER_API_KEY = "3hdfa5cfdv";
 
   return (
-    <>
+    <Container>
       <Title>Contact</Title>
       <RenderAfterNavermapsLoaded
         ncpClientId={NAVER_API_KEY} // 자신의 네이버 계정에서 발급받은 Client ID
@@ -254,15 +254,23 @@ const ContactPresenter = (props) => {
         </InfoTitle>
         <div>
           <Text1>
-            <Pinfo>상호명</Pinfo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 또오기 스토어
+            <Pinfo>상호명</Pinfo>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            또오기 스토어
             <br />
-            <Pinfo>대표자</Pinfo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 홍길동
+            <Pinfo>대표자</Pinfo>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            홍길동
             <br />
-            <Pinfo>사업자번호</Pinfo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 111-11-22222
+            <Pinfo>사업자번호</Pinfo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            111-11-22222
             <br />
-            <Pinfo>통신판매번호</Pinfo>&nbsp;&nbsp;&nbsp; 제 2020-부산해운대-9999 호
+            <Pinfo>통신판매번호</Pinfo>&nbsp;&nbsp;&nbsp; 제
+            2020-부산해운대-9999 호
             <br />
-            <Pinfo>이메일</Pinfo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wonside@tto-ogi.com
+            <Pinfo>이메일</Pinfo>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            wonside@tto-ogi.com
             <br />
           </Text1>
         </div>
@@ -287,7 +295,7 @@ const ContactPresenter = (props) => {
       </InfoContainer>
       <Space />
       <Space />
-    </>
+    </Container>
   );
 };
 
