@@ -17,12 +17,14 @@ import Login from 'Routes/Login'
 import SignUp from 'Routes/SignUp'
 import Detail from 'Routes/StoreDetail';
 import Edit from "Routes/Users/EditUser"
-<<<<<<< HEAD
 import List from 'Routes/ProductList';
 import Update from 'Routes/UpdateProduct';
-=======
 import Header from "../Header/Header";
->>>>>>> 2c0d3b4df69438455c37a6fae47efb1ef88db7af
+import General from "Routes/General";
+import View from "Routes/View";
+import Bulletin from "Routes/Bulletin";
+import BulletinWrite from "Routes/Bulletin/BulletinWrite";
+import GeneralWrite from "Routes/General/GeneralWrite";
 
 export default () => (
   <Router>
@@ -44,6 +46,11 @@ export default () => (
         <Route path="/image/:id" component={Detail} /> */}
         <Route path='/login' component={Login} />
         <Route path='/signup' component={SignUp} />
+        <Route path='/general' component={General} />
+        <Route path='/gwrite' component={GeneralWrite}/>
+        <Route path='/content/:id' component={View}/>
+        <Route path='/bulletin' component={Bulletin}/>
+        <Route path='/bwrite' component={BulletinWrite}/>
         <Route path='/users' component={Users} />
         <Route path='/detail' component={Detail} />
         <Route path='/edit' component={Edit} />
