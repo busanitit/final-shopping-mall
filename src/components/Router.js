@@ -19,11 +19,24 @@ import Detail from 'Routes/StoreDetail';
 import Edit from "Routes/Users/EditUser"
 import List from 'Routes/ProductList';
 import Update from 'Routes/UpdateProduct';
+<<<<<<< HEAD
 
+=======
+import Header from '../Header/Header'
+import General from "Routes/General";
+import GeneralWrite from "Routes/General/GeneralWrite";
+import View from "Routes/View";
+import Bulletin from "Routes/Bulletin";
+import BulletinWrite from "Routes/Bulletin/BulletinWrite";
+>>>>>>> 6ca7e331f861aadabeaa12798ea137bb90b0c8e1
 export default () => (
   <Router>
     <>
       {/* Switch: 두개의 컴포넌트가 랜더링되는것을 막아줌 */}
+<<<<<<< HEAD
+=======
+      {/*<Header/>*/}
+>>>>>>> 6ca7e331f861aadabeaa12798ea137bb90b0c8e1
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
@@ -37,6 +50,11 @@ export default () => (
         {/* <Route path="/title/:id" component={Detail} />
         <Route path="/price/:id" component={Detail} />
         <Route path="/image/:id" component={Detail} /> */}
+        <Route path='/general' component={General} />
+        <Route path='/gwrite' component={GeneralWrite}/>
+        <Route path='/content/:id' component={View}/>
+        <Route path='/bulletin' component={Bulletin}/>
+        <Route path='/bwrite' component={BulletinWrite}/>
         <Route path='/login' component={Login} />
         <Route path='/signup' component={SignUp} />
         <Route path='/users' component={Users} />
