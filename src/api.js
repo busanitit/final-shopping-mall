@@ -11,3 +11,11 @@ export const userApi = {
   fetchUserById: (id) => api.get(`users/${id}`),
   editUser: (user) => api.put(`users/${user.id}`, user),
 };
+
+export const productApi = {
+    prodList : () => api.get("product"),
+    insertProd: (prod) => api.post("product/", prod),
+    deleteProd: (prodID) => api.delete(`product/${prodID}`),
+    fetchProdById: (prodID) => api.get(`product/${prodID}`),
+};
+

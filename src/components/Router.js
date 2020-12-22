@@ -10,13 +10,16 @@ import About from "Routes/About";
 import TeaHouse from "Routes/TeaHouse";
 import IncenseShop from "Routes/IncenseShop";
 import Contact from "Routes/Contact";
-import Home from "Routes/Home";
-import Store from "Routes/Store";
-import Login from "Routes/Login";
-import SignUp from "Routes/SignUp";
-import Users from "Routes/Users";
-import Detail from "Routes/StoreDetail";
+import Users from 'Routes/Users'
+import Home from 'Routes/Home'
+import Store from 'Routes/Store'
+import Login from 'Routes/Login'
+import SignUp from 'Routes/SignUp'
+import Detail from 'Routes/StoreDetail';
 import Edit from "Routes/Users/EditUser"
+import List from 'Routes/ProductList';
+import Update from 'Routes/UpdateProduct';
+
 export default () => (
   <Router>
     <>
@@ -28,6 +31,12 @@ export default () => (
         <Route path='/incenseshop' component={IncenseShop} />
         <Route path='/store' component={Store} />
         <Route path='/contact' component={Contact} />
+        <Route path='/detail' component={Detail} />
+        <Route path='/list' component={List} />
+        <Route path='/update' component={Update} />
+        {/* <Route path="/title/:id" component={Detail} />
+        <Route path="/price/:id" component={Detail} />
+        <Route path="/image/:id" component={Detail} /> */}
         <Route path='/login' component={Login} />
         <Route path='/signup' component={SignUp} />
         <Route path='/users' component={Users} />

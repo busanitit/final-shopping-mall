@@ -4,6 +4,8 @@ import Contact from "Routes/Contact/ContactForHome";
 import SummaryForHome from "components/SummaryForHome";
 import LinkImageForHome from "components/LinkImageForHome";
 import SimpleSlider from 'components/SimpleSlider'
+import StoreForHome from "Routes/Store/StoreForHome";
+
 
 export default class extends React.Component {
   render() {
@@ -11,6 +13,7 @@ export default class extends React.Component {
       <Container>
         <SimpleSlider/>
         <SummaryForHome />
+        <StoreForHome />
         <Contact />
         <LinkImageForHome />
       </Container>
