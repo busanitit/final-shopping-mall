@@ -8,7 +8,6 @@ import Footer from '../Footer/Footer';
 function App() {
   return (
     <Container>
-      <Header />
       <Router/>
       <GlobalStyles/>
       <Footer />
