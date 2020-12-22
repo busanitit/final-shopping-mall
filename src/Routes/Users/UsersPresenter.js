@@ -3,8 +3,9 @@ import React from "react";
 import styled from "styled-components";
 import { AiFillEdit } from "react-icons/ai";
 import { BiTrash } from "react-icons/bi";
+import { Container } from "react-bootstrap";
 
-const Container = styled.div`
+const UContainer = styled.div`
   margin: 20px 0;
   display: grid;
   grid-template-columns: repeat(6, 16%);
@@ -27,21 +28,24 @@ const SemiTitle = styled.h4`
   font-size: 20px;
   font-weight: 600;
 `;
-
+const SContainer = styled.div`
+  margin-bottom:400px;
+`;
 export default ({ users, loading, deleteUser, pushEditPage }) =>
   loading ? (
     "loading..."
   ) : (
-    <>
+    <Container>
+      <SContainer>
       <SemiTitle>회원 리스트</SemiTitle>
-      <Container>
+      <UContainer>
         <div>아이디</div>
         <div>이름</div>
         <div>연락처</div>
         <div>주소</div>
         <div>수정</div>
         <div>삭제</div>
-      </Container>
+      </UContainer>
       {users.map((user, i) => (
         <GridContainer key={i}>
           <div>{user.userID}</div>
@@ -62,5 +66,6 @@ export default ({ users, loading, deleteUser, pushEditPage }) =>
           />
         </GridContainer>
       ))}
-    </>
+      </SContainer>
+    </Container>
   );
