@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { BsJustify } from 'react-icons/bs';
 
-
 class Header extends Component {
   render () {
       return (
         <nav className="navbar navbar-expand-md bg-dark navbar-dark" style={{flex:1, backgroundColor: 'gray'}} >
             <a className="navbar-brand" href="/" >또오기 스토리 │ </a>
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul className="navbar-nav" >
+              <ul className="navbar-nav" style={{fontSize: '14px', color: 'white' }} >
                   <li className="nav-item">
                       <a className="page-scroll" href="/" style={{ margin: 30 }}>Home</a>
                   </li>
@@ -34,7 +33,7 @@ class Header extends Component {
                       <a className="page-scroll" href="/#/contact"  style={{ margin: 30 }}>Contact</a>
                   </li>
                    <li className="">
-                      <a className="page-scroll" href="/"style={{ margin: 30 }}><BsJustify /> 전체보기</a>
+                      <a className="page-scroll" href="/"style={{ margin: 30 }}><BsJustify/> 전체보기</a>
                   </li>
                   <li className="">
                       <a className="page-scroll" href="/"style={{ margin: 30 }}>로그인</a>
@@ -45,6 +44,5 @@ class Header extends Component {
     );
   };
 }
-   
 
 export default Header;

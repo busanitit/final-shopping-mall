@@ -49,6 +49,7 @@ const Text = styled.p`
   padding: 3px 0 4px;
   line-height: 20px;
 `;
+
 const List = styled.ul`
   margin-top: 20px;
 `;

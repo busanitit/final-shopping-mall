@@ -23,7 +23,10 @@ const Title = styled.div`
   font-weight: 600;
   color: #145b3a;
   border-bottom: 1px solid #145b3a;
+<<<<<<< HEAD
+=======
   margin-top: 80px;
+>>>>>>> 2c0d3b4df69438455c37a6fae47efb1ef88db7af
   margin-bottom:10px;
 `;
 
